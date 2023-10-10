@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+}
+
+.sidebar {
+    position: relative;
+    height: 100vh;
+    width: 40vw;
+}
+
+.sidebar-picture {
+    height: 100vh;
+    width: 40vw;
+    object-fit: cover;
+}
+
+.sidebar-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 12vh;
+    font-size: 4rem;
+}
+
+.sidebar-logo {
+    height: inherit;
+}
+
+.container {
+    margin: 75px 40px 75px;
+}
