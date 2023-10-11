@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
@@ -32,30 +33,33 @@
             <div class="form-div">
                 <h3>Let's do this!</h3>
 
-                <form class="form">
-                    <div class="form-left">
-                        <label for="name">FIRST NAME</label>
-                        <input type="text" name="name">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password">
+                <form action="#" autocomplete="off">
+                    <div class="form">
+                        <div class="form-left">
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" name="name" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" required>
+                        </div>
+                        
+                        <div class="form-right">
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" name="lname">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone"  minlength="9" maxlength="9">
+                            <label for="cpassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="cpassword" required>
+                        </div>
                     </div>
-                    
-                    <div class="form-right">
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" name="lname">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone">
-                        <label for="cpassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="cpassword">
-                    </div>
+
+                    <button type="submit">Create Account</button>
                 </form>
             </div>
 
             <div class="bottom">
-                <button>Create Account</button>
-                <p>Already have an account?<a href=""> Log in</a></p>
+                <p>Already have an account?<a href="#"> Log in</a></p>
             </div>
         </div>
 
