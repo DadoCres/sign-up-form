@@ -109,3 +109,7 @@ a {
     color: #596D48;
     font-weight: bold;
 }
+
+.password-error {
+    font-size: 0.8rem;
+}
