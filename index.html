@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
@@ -41,7 +41,8 @@
                             <label for="email">EMAIL</label>
                             <input type="email" name="email" required>
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" required>
+                            <input class="password" type="password" name="password" reqired>
+                            <span class="password-error"></span>
                         </div>
                         
                         <div class="form-right">
@@ -50,7 +51,7 @@
                             <label for="phone">PHONE NUMBER</label>
                             <input type="tel" name="phone"  minlength="9" maxlength="9">
                             <label for="cpassword">CONFIRM PASSWORD</label>
-                            <input type="password" name="cpassword" required>
+                            <input class="cpassword" type="password" name="cpassword" >
                         </div>
                     </div>
 
